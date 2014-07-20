@@ -1,0 +1,30 @@
+{
+  "name": "node-crate",
+  "version": "0.9.9",
+  "description": "Pixel tracking for web-analytics using CRATE (crate.io)",
+  "main": "node-crate.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/megastef/crate-tracker.git"
+  },
+  "keywords": [
+    "CRATE",
+    "crate.io",
+    "Web Tracking",
+    "Web Analytics"
+  ],
+  "author": "Stefan Thies",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/megastef/crate-tracker/issues"
+  },
+  "homepage": "http://megastef.github.io/crate-tracker/",
+   "dependencies": {
+        "node-whois": "*",
+        "pixel-tracker": "*",
+        "node-crate": "*"
+   }
+}
