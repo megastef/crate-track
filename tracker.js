@@ -1,4 +1,4 @@
-var tracker = require('pixel-tracker')
+var tracker = require('./pixel-tracker.js')
 var crate = require ('node-crate')
 // whois mit eigenenm parser
 var whois = require ('./whois.js')
@@ -49,7 +49,7 @@ var lastRun = new Date (0);
 
 function updateWhois ()
 {
-    currentRun = lastRun;
+    currentRun = lastRun
     lastRun = new Date()
 
     crate.execute (NEW_IPS_SQL, [currentRun]).success (function (res){
