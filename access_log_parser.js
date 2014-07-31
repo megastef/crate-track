@@ -19,16 +19,30 @@ var objects = lines.map (function (e){
             if ( httpRec != null ) {
                 return {
 		
-                    datetime: recDate,
-                    client: parts[1],
-		    method: httpRec[1],
-                    http: httpRec[3],
-                    uri: httpRec[2],
-		    referer: parts[6],
-		    useragent: parts[8]
+                    ts: recDate,
+                    client_ip: parts[1],
+		            method: httpRec[1],
+                    //http_version: httpRec[3],
+                    path: httpRec[2],
+		            referer: parts[6],
+		            useragent: parts[8]
                 }
-		return parts;
             }
         } 
 })
+
 console.log (objects)
+/*
+web_log: 
+              {
+                ts:         'timestamp',
+                host:       'string',
+                domain:     'string',
+                referer:    'string',
+                decay:      'long',
+                useragent:  'string', 
+                language:   'string', 
+                client_ip:  'string',
+                whois_info: 'string'
+              }
+              */
