@@ -31,7 +31,9 @@ var objects = lines.map (function (e){
         } 
 })
 
-console.log (objects)
+objects.forEach (function (o) {
+    console.log (JSON.stringify (o) + '\n')
+})
 /*
 web_log: 
               {
